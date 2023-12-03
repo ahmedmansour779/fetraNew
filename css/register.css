@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&family=Mulish:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
+
+:root {
+    --bg-color: #07D184;
+    --text-color: #FFFFFF;
+    --btn-color: #FF9936;
+    --shadow-set: inset 0px 11px 8px -10px rgba(255, 255, 255, 0.5),
+        inset 0px -11px 8px -10px rgba(0, 0, 0, 0.2);
+}
+
+
+form {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.container {
+    width: 80%;
+    margin-top: 150px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.registration-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: rgba(10, 4, 60, 0.85);
+    font-size: 20px;
+    font-family: Mulish;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 30px;
+    word-wrap: break-word
+}
+
+.registration-form div input,
+.registration-form div select {
+
+    font-size: 25px;
+    padding: 50px;
+    width: 500px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    height: 70px;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.registration-form div input:focus {
+    outline: 1px solid rgba(0, 0, 255, 0.404);
+}
+
+input::placeholder {
+    color: #808080;
+    font-size: 20px;
+    font-family: Mulish;
+    font-weight: 400;
+    text-transform: lowercase;
+    word-wrap: break-word
+}
+
+.button-register {
+
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.button-register button {
+    text-align: center;
+    width: 220px;
+    height: 70px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: var(--shadow-set);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: bold;
+    line-height: 32px;
+    word-wrap: break-word;
+    background: rgba(255, 153, 54, 1);
+}
+
+.button-register p {
+    margin-top: 20px;
+    color: #808080;
+    font-size: 20px;
+    font-family: Mulish;
+    font-weight: 400;
+    text-transform: lowercase;
+    word-wrap: break-word
+}
+
+.button-register a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: Mulish;
+    font-weight: 600;
+    text-transform: lowercase;
+    word-wrap: break-word;
+}
+
+.button-register a:hover {
+    color: #fff;
+}
+
+.btn-reg {
+    width: 170px;
+    height: 50px;
+    box-shadow: var(--shadow-set);
+    border-radius: 16px;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    line-height: 50px;
+    word-wrap: break-word;
+    background-color: var(--btn-color);
+}
+
+@media screen and (max-width:600px) {
+    .registration-form div input {
+        width: 100%;
+    }
+
+    .registration-form div select {
+        width: 300px;
+    }
+}
+
+.txc {
+    color: #FF9936;
+}

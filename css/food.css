@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&family=Mulish:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+    background-color: var(--bg-color) !important;
+
+}
+
+.foodtext {
+    /* display: flex; */
+    /* flex-shrink: 0; */
+
+
+
+}
+
+.head-food {
+    color: white;
+    font-size: 35px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word;
+    margin: 2rem 0px;
+}
+
+.food {
+    color: white;
+    flex-wrap: wrap;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+    flex-direction: row !important;
+    width: 100%;
+}
+
+.food ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+    /* line-height: 30px !important; */
+    padding: 0;
+    margin: 0;
+
+}
+
+.food ul h4 {
+    color: white;
+    font-size: 2rem !important;
+    font-family: Plus Jakarta Sans;
+    font-weight: bold;
+    line-height: 30px;
+    word-wrap: break-word;
+    margin: 0.5rem 0;
+    padding: 0;
+}
+
+.food ul li {
+    margin: 5px 0 !important;
+    padding: 0 !important;
+    list-style: initial;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Plus Jakarta Sans;
+    line-height: 30px !important;
+    word-wrap: break-word;
+    list-style-position: inside;
+}
+
+.three-food {
+    /* margin-right: 0px; */
+    margin-top: 20px;
+}
+
+.three-food ul {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.three-food h4 {
+    color: white;
+    font-size: 30px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    line-height: 30px;
+    word-wrap: break-word
+}
+
+.three-food ul li {
+    list-style: initial;
+    margin: 5px !important;
+    padding: 0 !important;
+    list-style-position: inside;
+    color: white;
+    font-size: 23px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    line-height: 30px !important;
+    word-wrap: break-word
+}
+
+.head-title {
+    color: white;
+    font-size: 2rem !important;
+    font-family: Plus Jakarta Sans;
+    font-weight: bold;
+    line-height: 34px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+
+}
+
+.discription {
+    margin-top: 50px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    line-height: 53.50px;
+    word-wrap: break-word
+}
+
+@media screen and(max-width:600px) {
+    .foodtext .row {
+        flex-direction: column;
+    }
+}
+
+/* edit */
+
+.foodtext div {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.discription b {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Bai+Jamjuree:wght@300;400;500;600;700&family=Dancing+Script:wght@600&family=Heebo:wght@100;200;300;400;500;600;700;800&family=IBM+Plex+Serif:wght@200;300;400;500&family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;800&family=Raleway:ital@1&family=Roboto+Slab:wght@200;300;500;600;700&family=Roboto:wght@300;400;500&family=Work+Sans:ital,wght@1,500&display=swap');
+
+:root {
+   --mainBg: rgba(7, 209, 132, 1);
+   --btnBgColor: rgba(255, 153, 54, 1);
+   --spcialColor: rgba(25, 190, 72, 1);
+   --pColor: rgba(10, 4, 60, 0.85);
+   --inputBg: rgba(220, 220, 220, 1);
+
+}
+
+section {
+   overflow: hidden;
+}
+
+body {
+   direction: rtl;
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   background-color: var(--mainBg);
+}
+
+#search {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.search-input {
+   width: 75%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.search-input input {
+   outline: none;
+   padding: 0.5rem;
+   font-size: 26px;
+   color: #333333;
+   border: none;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 20px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.search-input input:focus {
+   border: 1px solid rgb(0, 255, 221);
+   /* box-shadow: 5px 5px 4px var(--btnBgColor) ; */
+}
+
+.search-input input::placeholder {
+   color: #808080;
+   font-size: 24px;
+
+   font-weight: 400;
+   line-height: 45.15px;
+   word-wrap: break-word;
+}
+
+.search-input button {
+   position: absolute;
+   left: 0;
+   width: 150px;
+   color: white;
+   font-size: 30px;
+   background: var(--btnBgColor);
+   border: none;
+   border-radius: 16px;
+   font-weight: 700;
+   line-height: 32px;
+   word-wrap: break-word;
+   padding: 0 1rem;
+   height: 100%;
+}
+
+
+#videosContent h3,
+#articlesContent h3 {
+   color: rgba(255, 255, 255, 1);
+   font-weight: 800;
+   font-size: 60px;
+   line-height: 75.6px;
+}
+
+#videosContent ul li,
+#articlesContent ul li {
+   font-weight: 600;
+   font-size: 28px;
+   line-height: 35.28px;
+   color: #fff;
+}
+
+#videosContent h6,
+#articlesContent h6 {
+   color: rgba(255, 255, 255, 1);
+   font-weight: 700;
+   font-size: 27px;
+   line-height: 40px;
+}
+
+#videosContent p,
+#articlesContent {
+   color: rgba(255, 255, 255, 1);
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 39.13px;
+}
+
+#videosAdvertisement .content {
+   border: 4px solid rgba(255, 255, 255, 1);
+   border-radius: 12px;
+}
+
+#videosAdvertisement .content h6 {
+   font-weight: 800;
+   font-size: 50px;
+   line-height: 72px;
+   color: rgba(255, 255, 255, 1);
+   margin: 0;
+   width: 100%;
+   height: 100%;
+}
+
+#videosAdvertisement .left {
+   margin: 0 !important;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   gap: 2rem;
+}
+
+#videosAdvertisement .google,
+#videosAdvertisement .ios {
+   border: 1px solid rgba(255, 255, 255, 1);
+   border-radius: 8px;
+   background-color: #fff;
+   text-align: left;
+   width: 268.19px;
+   color: rgba(12, 81, 63, 1);
+}
+
+.google span,
+.ios span {
+   color: #0C513F;
+   font-size: 16px;
+   font-family: Plus Jakarta Sans;
+   font-weight: 500;
+   line-height: 24px;
+   word-wrap: break-word
+}
+
+.image-main {
+   width: 100%;
+   /* flex-direction: column; */
+   align-items: center;
+   display: flex !important;
+   justify-content: space-between !important;
+}
+
+
+#articlesContent a {
+
+   text-decoration: none;
+   color: rgba(255, 255, 255, 1);
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 37.62px;
+}
+
+@media screen and (max-width:600px) {
+   .search-input input::placeholder {
+      font-size: 15px !important;
+   }
+
+   .search {
+      width: fit-content;
+      margin: auto;
+   }
+
+   .search-input button {
+      width: auto !important;
+
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+      color: #fff;
+
+   }
+
+   #videosContent h3 {
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 70px;
+   }
+
+   #videosContent ul li {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+   }
+
+   .search-input {
+      width: 98%;
+
+   }
+
+}
+
+@media screen and (min-width:500px)and (max-width:768px) {
+
+   .search-input {
+      width: 98%;
+
+   }
+
+
+
+}
+
+@media (max-width:992px) {
+   .search-input {
+      width: 95%;
+
+   }
+
+}

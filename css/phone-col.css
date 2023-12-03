@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&family=Mulish:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Gochi+Hand&family=Montserrat:ital,wght@1,300&family=Mulish:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&family=Rubik:wght@300&display=swap');
+
+:root {
+    --bg-color: #07D184;
+    --text-color: #FFFFFF;
+    --btn-color: #FF9936;
+    --shadow-set: inset 0px 11px 8px -10px rgba(255, 255, 255, 0.5),
+        inset 0px -11px 8px -10px rgba(0, 0, 0, 0.2);
+}
+
+.text-hero {
+    margin-top: 50px;
+}
+
+.text-hero h4 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 800;
+    word-wrap: break-word;
+}
+
+@media (max-width:767px) {
+    .text-hero h4 {
+        font-size: 40px;
+    }
+}
+
+.day-call {
+
+    margin-top: 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+form {
+    border-radius: 32px;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    padding: 1rem;
+    gap: 2rem;
+    height: 25rem;
+}
+
+form div,
+form div p {
+    width: 100%;
+    display: block;
+}
+
+form div p {
+    color: rgba(10, 4, 60, 0.85);
+
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 30px */
+    text-transform: capitalize;
+}
+
+form input {
+    width: 90%;
+    border-radius: 32px;
+    border: 1px #DCDCDC solid;
+}
+
+form input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+form input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-save {
+    width: 170px;
+    height: 50px;
+    box-shadow: var(--shadow-set);
+    border-radius: 16px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    line-height: 50px;
+    word-wrap: break-word;
+    background-color: var(--btn-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-save:hover {
+    color: #fff;
+}

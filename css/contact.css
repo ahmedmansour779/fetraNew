@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Bai+Jamjuree:wght@300;400;500;600;700&family=Dancing+Script:wght@600&family=Heebo:wght@100;200;300;400;500;600;700;800&family=IBM+Plex+Serif:wght@200;300;400;500&family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;800&family=Raleway:ital@1&family=Roboto+Slab:wght@200;300;500;600;700&family=Roboto:wght@300;400;500&family=Work+Sans:ital,wght@1,500&display=swap');
+
+:root {
+    --mainBg: rgba(7, 209, 132, 1);
+    --btnBgColor: rgba(255, 153, 54, 1);
+    --specialColor: rgba(25, 190, 72, 1);
+    --pColor: rgba(10, 4, 60, 0.85);
+    --inputBg: rgba(220, 220, 220, 1);
+    --shadow-set: inset 0px 11px 8px -10px rgba(255, 255, 255, 0.5),
+        inset 0px -11px 8px -10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    direction: rtl;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--mainBg);
+}
+
+.section-form {
+
+    margin-top: 100px;
+}
+.form-message{
+
+    width: 85%;
+}
+.form-message .contact-form{
+        display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+/* display: flex; */
+align-items: center;
+justify-content: space-around;
+}
+.form-message .contact-form .input-contact{
+    width: 50%;
+    margin-top: 40px;
+
+}
+.form-control{
+    margin-right: 35px;
+    border-radius: 50px;
+     width: 100%;
+    height: 150px;
+}
+.form-label{
+    margin-right: 30px;
+}
+
+
+
+.text-head {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+    font-size: 60px;
+
+    font-weight: 800;
+    word-wrap: break-word
+}
+
+.contact-card {
+
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid white;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 1rem;
+}
+.contact-card{
+    width: 350px !important;
+
+}
+
+.contact-card h3 {
+    margin-top: 50px;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 28px;
+    word-wrap: break-word
+}
+
+.contact-card p {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    line-height: 37.80px;
+    word-wrap: break-word
+}
+
+.contact-card i {
+    background: var(--btnBgColor);
+    width: 120px;
+    height: 120px;
+    box-shadow: var(--shadow-set);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+
+}
+
+.input-contact{
+
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.input-contact input {
+    width: 100% !important;
+
+}
+
+.input-contact label,
+.form-label {
+    margin-bottom: 10px;
+    color: rgba(10, 4, 60, 0.85);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 30px;
+    word-wrap: break-word
+}
+
+.input-contact input::placeholder {
+    font-size: 18px;
+}
+
+.contact-form {
+    display: flex;
+
+}
+
+.section-form {
+    width: 100%;
+
+}
+
+.image-form {
+    width: 40%;
+
+}
+
+
+
+
+@media (max-width:767px) {
+
+    .contact-form {
+        display: block;
+        align-items: start;
+        flex-direction: column;
+        margin-right: -20px;
+        justify-content: center;
+        /* margin: 0; */
+    }
+    .form-message{
+        width: 95%;
+    }
+
+    .form-message .contact-form .input-contact{
+
+        margin-top: 40px;
+
+        width: 100%;
+    }
+    .form-message .contact-form .input-contact input {
+        width: 85% !important;
+margin-inline:  auto;
+
+
+        height: 60px;
+    }
+    .form-message .contact-form .input-contact label{
+margin-right: 30px;
+font-size: 18px;
+margin-bottom: 10px;
+    }
+
+
+
+    .image-form {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        position: relative;
+    }
+
+    .image-form img {
+        width: 80%;
+    }
+
+
+
+
+    .contact-cards {
+        display: block;
+
+    }
+
+    .contact-card {
+        width: 350px;
+        height: 450px;
+    }
+}

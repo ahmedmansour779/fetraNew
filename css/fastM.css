@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Bai+Jamjuree:wght@300;400;500;600;700&family=Dancing+Script:wght@600&family=Heebo:wght@100;200;300;400;500;600;700;800&family=IBM+Plex+Serif:wght@200;300;400;500&family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;800&family=Raleway:ital@1&family=Roboto+Slab:wght@200;300;500;600;700&family=Roboto:wght@300;400;500&family=Work+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&family=Mulish:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+   --mainBg: rgba(7, 209, 132, 1);
+   --btnBgColor: rgba(255, 153, 54, 1);
+   --spcialColor: rgba(25, 190, 72, 1);
+   --pColor: rgba(10, 4, 60, 0.85);
+   --inputBg: rgba(220, 220, 220, 1);
+   --bg-color: #07D184;
+   --text-color: #FFFFFF;
+   --btn-color: #FF9936;
+   --shadow-set: inset 0px 11px 8px -10px rgba(255, 255, 255, 0.5),
+      inset 0px -11px 8px -10px rgba(0, 0, 0, 0.2);
+
+}
+
+body {
+   direction: rtl;
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   background-color: var(--mainBg);
+}
+
+.activeButton {
+   background-color: var(--btn-color);
+   color: #FFFFFF !important;
+}
+
+header {
+
+   align-items: center;
+
+   height: 150.68px;
+
+}
+
+.formFastM {
+
+   margin-top: 50px;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+nav li {
+   padding: 15px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+nav ul li a {
+   font-size: 22px !important;
+   font-weight: 700 !important;
+   /* text-decoration: none ; */
+
+   color: var(--text-color) !important;
+}
+
+
+/* style btn */
+.btn a {
+   margin-left: .4em;
+   font-family: 'Plus Jakarta Sans';
+
+   font-size: 28px;
+   font-weight: 700;
+   color: var(--text-color) !important;
+}
+
+.btn button {
+   width: 170px;
+   height: 70px;
+   border-radius: 50px;
+   font-weight: 800;
+   font-size: 24px;
+   line-height: 32px;
+   color: var(--text-color);
+   background: var(--btn-color);
+   border: none;
+   box-shadow: var(--shadow-set)
+}
+
+#fats h3 {
+   text-align: center;
+   color: white;
+   font-size: 60px;
+   font-family: Roboto;
+   font-weight: 800;
+   word-wrap: break-word
+}
+
+#fats .buttons {
+   border-radius: 20px !important;
+   text-align: center !important;
+   position: relative;
+   /* background: #fff; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 1rem;
+
+}
+
+.women,
+.men {
+   margin-top: 1rem;
+   color: #000;
+   border: none;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   /* background: rgba(255, 153, 54, 1); */
+   border-radius: 16px;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 32px;
+   /* color: #fff; */
+   padding: 10px;
+   width: 212px;
+   height: 80px;
+   /* position: relative; */
+   margin: 0 !important;
+}
+
+.women {
+   color: #181818;
+   font-size: 30px;
+   font-family: Plus Jakarta Sans;
+   font-weight: 400;
+   line-height: 45.15px;
+   word-wrap: break-word
+      /* background-color: rgba(255, 153, 54, 1); */
+
+}
+
+.men {
+   position: relative;
+   color: #181818;
+   font-size: 30px;
+   font-family: Plus Jakarta Sans;
+   font-weight: 700;
+   line-height: 32px;
+   word-wrap: break-word
+}
+
+
+.formFastM {
+
+   width: 100%;
+   margin-inline: auto;
+   /* height: 800px; */
+   /* margin: auto; */
+   box-shadow: -1px 69px 42px 0px rgba(239, 211, 114, 0.05);
+   box-shadow: 0px 18px 4px 0px rgba(126, 182, 147, 0.25);
+   background-color: rgba(255, 255, 255, 1);
+   border-radius: 19px
+}
+
+
+
+
+.formFastM button {
+   margin-top: 50px;
+
+   height: 70px;
+   color: white;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   box-shadow: 0px -8px 10px 0px rgba(0, 0, 0, 0.2) inset;
+   box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.5) inset;
+   background: rgba(255, 153, 54, 1);
+   width: 50%;
+   border-radius: 50px;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 32px;
+
+
+
+}
+
+.deatails {
+   margin-top: 40px;
+   margin-bottom: 40px;
+   /* background: #000;  */
+   /* margin-right: 30px; */
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.p-fast {
+   color: black;
+   font-size: 1.2rem;
+   font-family: Plus Jakarta Sans;
+   font-weight: 500;
+   line-height: 32px;
+   word-wrap: break-word
+}
+
+.circle {
+   overflow: hidden;
+   display: flex;
+   justify-content: space-between;
+   position: absolute;
+   width: 100%;
+   top: 200px !important;
+   z-index: -1;
+}
+
+.style-form {
+   flex-wrap: wrap;
+   padding: 15px;
+   gap: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.style-form input {
+   /* margin-top: 50px ; */
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   width: 480px !important;
+   padding: 8px;
+   height: 80px;
+   margin-right: 10px !important;
+   border-radius: 16px;
+   margin-bottom: 16px;
+   box-sizing: border-box;
+}
+
+.input-form {
+   margin-top: 50px;
+
+}
+
+.input-form label {
+   margin-bottom: 10px;
+   color: rgba(10, 4, 60, 0.85);
+   font-size: 20px;
+   font-family: Plus Jakarta Sans;
+   font-weight: 700;
+   text-transform: capitalize;
+   line-height: 30px;
+   word-wrap: break-word
+}
+
+.content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#fats .content h5 {
+
+   color: white;
+   font-size: 48px;
+   font-family: Plus Jakarta Sans;
+   font-weight: 700;
+   word-wrap: break-word;
+   line-height: 60.48px;
+}
+
+#fats .content p {
+   color: rgba(255, 255, 255, 1);
+   font-size: 40px;
+   font-family: Plus Jakarta Sans;
+   font-weight: 500;
+   word-wrap: break-word;
+   line-height: 60.48px;
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+   .formFastM {
+      width: 95% !important;
+      margin: auto;
+
+   }
+
+   .style-form {
+      width: 100%;
+      flex-direction: row;
+   }
+
+   .style-form input {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      width: 400px !important;
+      padding: 8px;
+      height: 80px;
+      border-radius: 32px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+   }
+}
+
+@media screen and (min-width:768px)and (max-width:992px) {
+
+   .formFastM {
+      width: 90%;
+      margin: auto;
+   }
+
+   .style-form {
+      width: 100%;
+      flex-direction: row;
+   }
+
+   .style-form input {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      width: 280px !important;
+      padding: 8px;
+      height: 80px;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+   }
+}
+
+@media screen and (min-width:500px)and (max-width:768px) {
+   .formFastM {
+      width: 100% !important;
+
+
+   }
+
+   .formFastM button {
+      width: 300px;
+   }
+
+   .style-form input {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      width: 400px !important;
+      padding: 8px;
+
+      height: 80px;
+      border-radius: 32px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+   }
+
+   .style-form {
+      width: 100%;
+      flex-direction: column;
+   }
+}
+
+@media screen and (min-width:300px)and (max-width:500px) {
+   .formFastM {
+      width: 99%;
+      margin: auto;
+   }
+
+   .style-form {
+      width: 100%;
+
+      flex-direction: column;
+   }
+
+   .style-form input {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      width: 320px !important;
+      padding: 8px;
+      margin-right: -10px !important;
+      height: 80px;
+      border-radius: 32px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+   }
+
+   .formFastM button {
+      width: 250px;
+   }
+
+
+
+   #fats h3 {
+      font-weight: 600;
+      font-size: 50px;
+   }
+
+   #fats .content h5 {
+      font-weight: 700;
+      font-size: 30px;
+   }
+
+   #fats .content p {
+      font-size: 30px;
+   }
+
+   .men,
+   .women {
+      width: 150px;
+   }
+}

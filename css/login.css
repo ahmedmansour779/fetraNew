@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&family=Mulish:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
+
+:root {
+    --bg-color: #07D184;
+    --text-color: #FFFFFF;
+    --btn-color: #FF9936;
+    --shadow-set: inset 0px 11px 8px -10px rgba(255, 255, 255, 0.5),
+        inset 0px -11px 8px -10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    direction: rtl;
+    background-color: var(--bg-color) !important;
+
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.image-bg-first {
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* height: 100vh; */
+}
+
+.lamp {
+    position: absolute;
+    top: 0;
+    right: 30%;
+    width: 120px;
+
+}
+
+.boy {
+    width: 300px;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+
+}
+
+.image-avatar {
+
+    margin-top: 2rem;
+    /* margin-top: 300px; */
+}
+
+.text-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.text-input>input {
+    /* width: 500px; */
+    background: transparent;
+    color: inherit;
+    border: none;
+    color: #000;
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+    margin-bottom: 1rem;
+    padding: 1rem .5rem;
+    outline: transparent;
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+
+.text-input label {
+    margin-left: 1rem;
+    transform: translateY(-60px);
+    transition: transform .2s;
+    pointer-events: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 1);
+}
+
+input:focus~label {
+    /* color: red; */
+    transform: translateY(-100px);
+
+}
+
+::placeholder {
+    color: #fff !important;
+}
+
+[type=number],
+[type=tel],
+[type=url] {
+    direction: rtl !important;
+
+}
+
+.formLogin {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.btn-register {
+    padding-top: 2rem;
+    display: block;
+    width: 100%;
+    direction: ltr;
+}
+
+.btn-register button {
+    border-radius: 32px;
+    border: none;
+    background: var(--btn-color);
+    height: 60px;
+    box-shadow: var(--shadow-set);
+    display: block;
+    display: flex;
+    align-items: center;
+
+}
+
+.btn-register button a {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding: 0.7rem;
+}
+
+.btn-register-platform {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-register-platform .btn-reg {
+    background: transparent;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.btn-register-platform .btn-reg a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    line-height: 32.40px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word
+}
+
+.fa-google {
+    color: rgb(247, 31, 31);
+    margin-right: 20px;
+
+
+}
+
+.fa-facebook-f {
+    margin-right: 20px;
+    color: rgb(31, 117, 247);
+}
+
+.button-register {
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 200px;
+    height: 70px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    /* margin-left: 100px !important; */
+    background: rgba(255, 153, 54, 1);
+    border-radius: 8px;
+
+    color: white;
+    font-size: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    line-height: 32px;
+    word-wrap: break-word
+}
+
+.button-register a {
+    color: var(--text-color);
+}
+
+
+.btn-register-parent {
+
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-login {
+    width: 200px;
+    height: 70px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    /* margin-right: 100px !important; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: rgba(255, 153, 54, 1);
+    border-radius: 8px;
+
+    color: white;
+    font-size: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    line-height: 32px;
+    word-wrap: break-word
+}
+
+.button-login a {
+    color: var(--text-color);
+}
+
+.btn-go button {
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 5px;
+
+}
+
+.btn-go a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (min-width:1050px) and (max-width:1400px) {
+    input {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width:768px)and (max-width:992px) {
+    input {
+        width: 400px !important;
+    }
+
+}
+
+@media screen and (min-width:500px)and (max-width:768px) {
+    input {
+        width: 300px;
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .btn-go {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:360px)and (max-width:500px) {
+    input {
+        width: 300px;
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .btn-go {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:360px) {
+    input {
+        width: 300px;
+    }
+
+    .image-bg {
+        display: none;
+    }
+
+    .image-bg .image-bg-first {
+        position: relative;
+    }
+
+    .btn-register-platform {
+        gap: 1rem;
+        /* width: 300px; */
+        flex-direction: column;
+    }
+
+    .btn-reg {
+        width: 300px !important;
+
+        height: 80px !important;
+    }
+}
+
+@media screen and (max-width:350px) and (min-width:300px) {
+    .image-bg {
+        display: none;
+    }
+
+    input {
+        width: 300px !important;
+    }
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .btn-register-platform {
+        /* width: 200px; */
+
+
+        flex-direction: column;
+    }
+
+    .btn-register-platform .btn-reg {
+        height: 70px;
+        padding: 10px;
+        width: fit-content;
+    }
+
+    .image-avatar {
+        position: relative;
+    }
+
+    .image-avatar img {
+        width: 100%;
+    }
+}
+
+@media (max-width :600px) {
+    .text-input>input {
+        width: 100% !important;
+    }
+}

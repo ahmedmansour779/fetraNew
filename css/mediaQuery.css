@@ -1,0 +1,9 @@
+@media (max-width: 425px) {
+    .formAction {
+        width: 100% !important;
+    }
+
+    .icon-nav {
+        gap: 0;
+    }
+}

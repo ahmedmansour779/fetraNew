@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مواعيد المشي </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/sleeping.css" />
+  <link rel="stylesheet" href="../css/slidebar.css">
+</head>
+
+<body>
+
+  <section class="mt-4">
+    <div class="side">
+      <div class="toggle-btn">
+        <div class="content to-be-fixed">
+          <div class="new-header show-in-phone">
+            <div class="container">
+              <div class="logo-header">
+                <img src="../assets/Logo.png" alt="logo" />
+              </div>
+              <div class="buttons-header">
+                <div class="search-header">
+                  <div class="search-icon">
+                    <img src="../assets/search.png" alt="search" />
+                  </div>
+                  <input type="text" name="search" />
+                </div>
+
+                <div class="mode-change" id="toggleBtn">
+                  <div class="active-mode-div" id="light-mode-div">
+                    <svg class="active-mode-icon" id="light-mode-icon" xmlns="http://www.w3.org/2000/svg" width="17"
+                      height="16" viewBox="0 0 17 16">
+                      <g clip-path="url(#clip0_940_1995)">
+                        <path
+                          d="M16.3158 7.33333H13.5958C13.5438 6.96603 13.4478 6.60632 13.3098 6.262L15.6611 4.89933C15.7397 4.85704 15.809 4.79941 15.8649 4.72984C15.9208 4.66027 15.9621 4.58019 15.9865 4.49435C16.0109 4.4085 16.0177 4.31863 16.0067 4.23007C15.9957 4.14151 15.9671 4.05606 15.9224 3.97879C15.8778 3.90152 15.8181 3.83399 15.7469 3.78022C15.6756 3.72645 15.5944 3.68752 15.5078 3.66575C15.4213 3.64398 15.3312 3.63981 15.243 3.65348C15.1549 3.66715 15.0703 3.69838 14.9944 3.74533L12.6411 5.11C12.4161 4.82581 12.1591 4.56855 11.8751 4.34333L13.2391 1.98933C13.3212 1.8367 13.3407 1.65808 13.2934 1.49134C13.246 1.3246 13.1356 1.18285 12.9855 1.09615C12.8354 1.00944 12.6575 0.984603 12.4894 1.02689C12.3213 1.06918 12.1763 1.17527 12.0851 1.32267L10.7204 3.67267C10.3762 3.53448 10.0164 3.43845 9.64909 3.38667V0.666667C9.64909 0.489856 9.57885 0.320286 9.45383 0.195262C9.3288 0.0702379 9.15923 0 8.98242 0C8.80561 0 8.63604 0.0702379 8.51102 0.195262C8.38599 0.320286 8.31576 0.489856 8.31576 0.666667V3.38667C7.94842 3.43845 7.58869 3.53448 7.24442 3.67267L5.88176 1.32133C5.79056 1.17393 5.64555 1.06784 5.47746 1.02556C5.30937 0.983269 5.13141 1.00811 4.98133 1.09482C4.83124 1.18152 4.72083 1.32327 4.67349 1.49001C4.62615 1.65675 4.64562 1.83537 4.72776 1.988L6.09176 4.34333C5.80776 4.56855 5.55073 4.82581 5.32576 5.11L2.97242 3.74533C2.89653 3.69838 2.81199 3.66715 2.7238 3.65348C2.63561 3.63981 2.54558 3.64398 2.45903 3.66575C2.37249 3.68752 2.2912 3.72645 2.21998 3.78022C2.14876 3.83399 2.08905 3.90152 2.04441 3.97879C1.99977 4.05606 1.9711 4.14151 1.9601 4.23007C1.94909 4.31863 1.95598 4.4085 1.98035 4.49435C2.00473 4.58019 2.04609 4.66027 2.10198 4.72984C2.15788 4.79941 2.22717 4.85704 2.30576 4.89933L4.65509 6.262C4.51705 6.60632 4.42103 6.96603 4.36909 7.33333H1.64909C1.47228 7.33333 1.30271 7.40357 1.17768 7.5286C1.05266 7.65362 0.982422 7.82319 0.982422 8C0.982422 8.17681 1.05266 8.34638 1.17768 8.47141C1.30271 8.59643 1.47228 8.66667 1.64909 8.66667H4.36909C4.42103 9.03397 4.51705 9.39368 4.65509 9.738L2.30376 11.1007C2.22517 11.143 2.15588 11.2006 2.09998 11.2702C2.04409 11.3397 2.00273 11.4198 1.97835 11.5057C1.95398 11.5915 1.94709 11.6814 1.9581 11.7699C1.9691 11.8585 1.99777 11.9439 2.04241 12.0212C2.08706 12.0985 2.14676 12.166 2.21798 12.2198C2.2892 12.2736 2.37049 12.3125 2.45703 12.3342C2.54358 12.356 2.63361 12.3602 2.7218 12.3465C2.80999 12.3329 2.89453 12.3016 2.97042 12.2547L5.32376 10.89C5.54873 11.1742 5.80576 11.4314 6.08976 11.6567L4.72776 14.0107C4.64562 14.1633 4.62615 14.3419 4.67349 14.5087C4.72083 14.6754 4.83124 14.8171 4.98133 14.9039C5.13141 14.9906 5.30937 15.0154 5.47746 14.9731C5.64555 14.9308 5.79056 14.8247 5.88176 14.6773L7.24442 12.326C7.58873 12.4644 7.94842 12.5608 8.31576 12.6133V15.3333C8.31576 15.5101 8.38599 15.6797 8.51102 15.8047C8.63604 15.9298 8.80561 16 8.98242 16C9.15923 16 9.3288 15.9298 9.45383 15.8047C9.57885 15.6797 9.64909 15.5101 9.64909 15.3333V12.6133C10.0164 12.5612 10.3761 12.4652 10.7204 12.3273L12.0831 14.6787C12.1743 14.8261 12.3193 14.9322 12.4874 14.9744C12.6555 15.0167 12.8334 14.9919 12.9835 14.9052C13.1336 14.8185 13.244 14.6767 13.2914 14.51C13.3387 14.3433 13.3192 14.1646 13.2371 14.012L11.8731 11.658C12.1571 11.4328 12.4141 11.1755 12.6391 10.8913L14.9924 12.256C15.0683 12.303 15.1529 12.3342 15.241 12.3479C15.3292 12.3615 15.4193 12.3574 15.5058 12.3356C15.5924 12.3138 15.6736 12.2749 15.7449 12.2211C15.8161 12.1673 15.8758 12.0998 15.9204 12.0225C15.9651 11.9453 15.9937 11.8598 16.0047 11.7713C16.0157 11.6827 16.0089 11.5928 15.9845 11.507C15.9601 11.4211 15.9188 11.3411 15.8629 11.2715C15.807 11.2019 15.7377 11.1443 15.6591 11.102L13.3078 9.73933C13.4466 9.39467 13.5433 9.03451 13.5958 8.66667H16.3158C16.4926 8.66667 16.6621 8.59643 16.7872 8.47141C16.9122 8.34638 16.9824 8.17681 16.9824 8C16.9824 7.82319 16.9122 7.65362 16.7872 7.5286C16.6621 7.40357 16.4926 7.33333 16.3158 7.33333ZM8.98242 11.3333C4.57709 11.1933 4.57842 4.806 8.98242 4.66667C13.3878 4.80667 13.3864 11.194 8.98242 11.3333Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_940_1995">
+                          <rect width="16" height="16" fill="white" transform="translate(0.982422)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="not-active-mode-div" id="dark-mode-div">
+                    <svg class="not-active-mode-icon" id="dark-mode-icon" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-moon-filled" width="24" height="24" viewBox="0 0 24 24"
+                      stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z"
+                        stroke-width="0" fill="currentColor" />
+                    </svg>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center;">
+                  <li class="dropdown">
+                  <li style="padding: 0;" class="btn  dropdown-toggle drowpdownNameUser" type="button"
+                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../assets/Notifications.png" style="width: 18px;" class="fa-bell" alt="">
+                  </li>
+                  <ul class="dropdown-menu Notifications-menu " aria-labelledby="dropdownMenuButton1">
+
+                    <li>
+                      <a class="dropdown-item" href="../subscription.html">
+                        <div class="Notifications">
+                          <div>
+                            <img src="../assets/Icon.png" alt="">
+                          </div>
+                          <div>
+                            <h5>تذكير</h5>
+                            <p>لقد اقترب موعد قياس الدهون</p>
+                          </div>
+                          <div>
+                            <img src="../assets/Close button.png" alt="">
+                          </div>
+                        </div>
+
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="../subscription.html">
+                        <div class="Notifications">
+                          <div>
+                            <img src="../assets/Icon.png" alt="">
+                          </div>
+                          <div>
+                            <h5>تذكير</h5>
+                            <p>لقد اقترب موعد قياس الدهون</p>
+                          </div>
+                          <div>
+                            <img src="../assets/Close button.png" alt="">
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  </li>
+                </div>
+                <div style="display: flex; align-items: center;">
+                  <div class="user">
+                    <li class="dropdown">
+                    <li style="padding: 0;" class="btn  dropdown-toggle drowpdownNameUser" type="button"
+                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-gear"></i>
+                    </li>
+                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="../subscription.html">الاشتراك في المتابعات</a></li>
+                      <li><a class="dropdown-item" href="../phone-col.html"> طلب مكالمة خاصة</a></li>
+                      <li><a class="dropdown-item" href="../history.html">سجل نشاطك اليومي </a></li>
+                      <li><a class="dropdown-item" href="information.html">بياناتي </a></li>
+                      <li><a class="dropdown-item" href="register.html"> تسجيل خروج </a></li>
+                    </ul>
+                    </li>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content show-in-large">
+            <div class=" content-form " style="margin: 0;">
+              <i style="color: #07d184 !important;width: 2rem;height: 2rem;" onclick="toggleSidebar()" id="sideBar"
+                class="fa-solid fa-bars icon-header"></i>
+              <h6> الصفحة الرئيسية </h6>
+            </div>
+            <div class="  ">
+              <form action="" class="formAction">
+                <div class="nav-form">
+                  <div class="input-navbar-side" id="search-icon">
+                    <i class="fa-solid fa-search  search-icon" onclick="toggleSearchContainer()"></i>
+                    <input type="search" class="search-input">
+                  </div>
+                  <div class="icons-navbar " id="search-container">
+                    <div class="icon-nav ">
+                      <div>
+                        <i id="toggleBtnLarg" class="fa-solid fa-moon"></i>
+                      </div>
+                      <div class="globe ">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>English</span>
+                      </div>
+                      <div>
+                        <li class="dropdown">
+                        <li class="btn  dropdown-toggle drowpdownNameUser" type="button" id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/Notifications.png" style="width: 18px;" class="fa-bell" alt="">
+                        </li>
+                        <ul class="dropdown-menu Notifications-menu " aria-labelledby="dropdownMenuButton1">
+
+                          <li>
+                            <a class="dropdown-item" href="../subscription.html">
+                              <div class="Notifications">
+                                <div>
+                                  <img src="../assets/Icon.png" alt="">
+                                </div>
+                                <div>
+                                  <h5>تذكير</h5>
+                                  <p>لقد اقترب موعد قياس الدهون</p>
+                                </div>
+                                <div>
+                                  <img src="../assets/Close button.png" alt="">
+                                </div>
+                              </div>
+
+                            </a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="../subscription.html">
+                              <div class="Notifications">
+                                <div>
+                                  <img src="../assets/Icon.png" alt="">
+                                </div>
+                                <div>
+                                  <h5>تذكير</h5>
+                                  <p>لقد اقترب موعد قياس الدهون</p>
+                                </div>
+                                <div>
+                                  <img src="../assets/Close button.png" alt="">
+                                </div>
+                              </div>
+
+                            </a>
+                          </li>
+
+
+
+                        </ul>
+                        </li>
+                      </div>
+                      <div class="user">
+                        <i class="fa-solid fa-gear"></i>
+                        <li class="dropdown">
+                        <li class="btn  dropdown-toggle drowpdownNameUser" type="button" id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          الاعدادات
+                        </li>
+
+                        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="../subscription.html">الاشتراك في المتابعات</a></li>
+                          <li><a class="dropdown-item" href="../phone-col.html"> طلب مكالمة خاصة</a></li>
+                          <li><a class="dropdown-item" href="../history.html">سجل نشاطك اليومي </a></li>
+                          <li><a class="dropdown-item" href="information.html">بياناتي </a></li>
+                          <li><a class="dropdown-item" href="register.html"> تسجيل خروج </a></li>
+                        </ul>
+                        </li>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </form>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sideBar">
+        <div class="logo">
+          <div class="t-circle ">
+            <div class="four-circle"></div>
+            <div class="first-circle"></div>
+
+          </div>
+          <a class="navbar-brand " href="indexLogin.html">
+            <img class="img-Logo" src="../assets/Logo.png" alt="">
+            <span> </span>
+          </a>
+        </div>
+
+        <a href="indexLogin.html" class="active">الرئيسية</a>
+
+        <a href="fastM.html">قياس الدهون </a>
+
+
+        <a href="meals.html">تصميم الوجبات </a>
+
+
+        <a href="recieps.html"> الوصفات</a>
+
+        <a href="posts.html"> البوستات</a>
+
+
+        <a href="pageVideo.html">الفيديوهات</a>
+
+        <button class="dropdown-btn ">
+          <i class="fa fa-caret-down"></i>
+          المقالات
+        </button>
+        <div class="dropdown-container">
+          <a href="ArticleTwo.html">المقال 1</a>
+          <a href="ArticleTwo.html">المقال 2</a>
+          <a href="ArticleTwo.html">المقال 3</a>
+        </div>
+
+
+        <a href="sleeping.html">مواعيد النوم</a>
+
+
+
+        <a href="walking.html">مواعيد المشي</a>
+
+
+        <a href="size.html">قياساتي</a>
+
+
+        <a href="information.html">بياناتي</a>
+
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary   " id="navbar">
+      <div class="container-fluid">
+        <div class="logo">
+          <a class="navbar-brand" href="indexLogin.html">
+            <img class="img-Logo" src="../assets/Logo.png" alt="">
+            <span> </span>
+          </a>
+        </div>
+        <!-- <i   id="toggleBtn" class="fa-solid fa-moon"></i> -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fa-solid fa-bars"></i>
+
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="indexLogin.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fastM.html">قياس الدهون </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="meals.html"> تصميم الوجبات </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recieps.html"> الوصفات </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="posts.html"> البوستات </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pageVideo.html"> الفيديوهات </a>
+            </li>
+            <button class="dropdown-btn ">
+              <i class="fa fa-caret-down"></i>
+              المقالات
+            </button>
+            <div class="dropdown-container">
+              <a href="ArticleTwo.html">المقال 1</a>
+              <a href="ArticleTwo.html">المقال 2</a>
+              <a href="ArticleTwo.html">المقال 3</a>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="sleeping.html"> مواعيد النوم </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="walking.html"> مواعيد المشي </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="size.html"> قياساتي </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="information.html"> بياناتي </a>
+            </li>
+
+
+          </ul>
+          <div class="btn d-flex align-items-center">
+
+            <button>
+              <a style="text-decoration: none;" href="htmlpages2/register.html"> تسجيل الخروج
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </section>
+  <section>
+    <div class="circle">
+      <div class="t-circle ">
+        <div class="four-circle"></div>
+        <div class="first-circle"></div>
+
+      </div>
+      <div class="e-circle">
+        <div class="secand-circle"></div>
+        <div class="three-circle"></div>
+
+
+      </div>
+
+    </div>
+    <section id="meals" class="mt-5">
+
+      <div class="container">
+        <div class="text-section-hour-sleep">
+          <h4>ساعات المشي:</h4>
+          <p class="line"></p>
+
+        </div>
+        <div class="input-hours">
+          <form action="">
+            <div class="input-hours-flex">
+              <div class="input-colum">
+                <label for="">نسبة الدهون:</label> <input type="text" />
+              </div>
+              <div class="input-colum">
+                <label for="">الحالة الصحية:</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="result">
+              <button>النتيجة</button>
+
+            </div>
+          </form>
+
+        </div>
+        <div class="text-result">
+          <div class="text-h3">
+            <h3>
+              (فوائد المشى والرياضة):
+            </h3>
+            <span class="line2"></span>
+
+          </div>
+          <ul>
+            <li>
+              مده المشي ٢٥ دقيقه مقسمه كالتالي دقيقه مشي خطوه واسعه ودقيقتين مشي خطوه سريعه جدا وتكرر هذه المجموعه لحين
+              الانتهاء من ال٢٥ دقيقه ولمده اسبوعين.
+            </li>
+            <li> أفضل توقيت للمشي بعد الاستيقاظ مباشره وقبل الوجبه الأولي.</li>
+            <li> التمرين المسائي هو تمرين المقاومه بالاوزان داخل الجيم ويفضل في مستواك الحالي يكون خمس مرات اسبوعيا وتحت
+              اشراف مدرب.</li>
+          </ul>
+        </div>
+
+
+      </div>
+      <div class="background-sidebar" id="backgroundSidebar" onclick="handleBtnClose()"></div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+      <script src="../js/main.js"></script>
+</body>
+
+</html>
