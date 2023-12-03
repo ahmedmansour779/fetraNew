@@ -3085,6 +3085,10 @@ footer {
         font-size: 18px !important;
     }
 
+    .footer-info p {
+        font-size: 1.5rem !important;
+    }
+
     .footer-content .form button {
         width: 30%;
         font-size: 1rem;
@@ -3092,6 +3096,18 @@ footer {
 
     .footer-content .form input {
         width: 80% !important;
+    }
+
+    .footer-content .form input {
+        padding: 0.5rem
+    }
+
+    .footer-info .images div {
+        gap: 0.5rem;
+    }
+
+    .footer-info .images img {
+        width: 20%;
     }
 }
 
@@ -3215,7 +3231,7 @@ footer {
     }
 
     .to-be-fixed {
-        background: none !important;
+        background: #07D184 !important;
     }
 
     .toggle-btn h6,
