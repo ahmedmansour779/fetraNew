@@ -527,8 +527,6 @@ left: -50px; */
 
 
 .card-section h2 {
-    margin-top: 20px;
-    margin-right: 10px;
     /* padding: 50px 15px 30px 15px; */
     color: rgba(255, 255, 255, 1);
     font-family: 'Plus Jakarta Sans';
@@ -1851,7 +1849,8 @@ main h2 {
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-
+    width: fit-content !important;
+    padding: 0.5rem;
 }
 
 .next {
